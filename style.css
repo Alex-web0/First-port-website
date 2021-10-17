@@ -2,9 +2,9 @@
     opacity: 1;
     -webkit-transition: all .5s ease-in 3s;
     transition: all .5s ease-in 3s;
-  }
-  
-  .scroll-down {
+}
+
+.scroll-down {
     position: absolute;
     bottom: 35%;
     left: 50%;
@@ -20,76 +20,105 @@
     animation: bounce 2s infinite 2s;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-  }
-  
-  .scroll-down:before {
-      position: absolute;
-      top: calc(50% - 8px);
-      left: calc(50% - 6px);
-      transform: rotate(-45deg);
-      display: block;
-      width: 12px;
-      height: 12px;
-      content: "";
-      border: 2px solid rgb(24, 24, 24);
-      border-width: 0px 0 2px 2px;
-  }
-  
-  @keyframes bounce {
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid rgb(24, 24, 24);
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+
     0%,
     100%,
     20%,
     50%,
     80% {
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
     }
+
     40% {
-      -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-      transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
     }
+
     60% {
-      -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-      transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
     }
-  }
+}
 
 
+.ra {
+    font-family: 'Raleway', sans-serif;
+}
+
+.ma {
+    font-family: 'montserrat', sans-serif;
+}
 
 
+input {
+    border: 2px solid grey;
+    border-radius: 4px;
+}
 
 
-.text-color-1{
+.text-color-1 {
     color: #e09198;
 }
-.bg-color-1{
+
+.bg-color-1 {
     background-color: #e09198;
 }
 
 
-.text-color-2{
+.text-color-2 {
     color: #FFF;
 }
-.bg-color-2{
+
+.bg-color-2 {
     background-color: #fff;
 }
 
 
-.text-color-3{
+.text-color-3 {
     color: #ff782d;
 }
-.bg-color-3{
+
+.bg-color-3 {
     background-color: #ff782d;
 }
 
 
-.text-color-4{
+.text-color-4 {
     color: #8b456a;
 }
-.bg-color-4{
+
+.bg-color-4 {
     background-color: #8b456a;
 }
 
+
+
+.go-up {
+    position: fixed;
+    right: 4%;
+    bottom: 6%;
+    box-shadow: gray;
+    z-index: 1;
+    font-weight: bold;
+
+}
